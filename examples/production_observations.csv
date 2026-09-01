@@ -1,0 +1,2 @@
+timestamp,deployment_id,workflow_id,human_accepted,workflow_failed,latency_ms,total_workflow_cost_usd,notes
+2026-08-31T12:00:00Z,DEP-CUSTOMER-001,WF-AGENT-001,yes,no,1180,0.05,Example production observation

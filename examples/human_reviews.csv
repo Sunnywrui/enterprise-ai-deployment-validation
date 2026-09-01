@@ -1,0 +1,4 @@
+case_id,repetition,score,accepted,rationale
+G-004,1,0.95,yes,Reviewer confirmed business meaning is correct and usable.
+G-004,2,0.90,yes,Reviewer confirmed deployment variance and revalidation.
+G-004,3,0.90,yes,Reviewer accepted with minor wording differences.

@@ -1,0 +1,45 @@
+name: Enterprise AI Release Gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "examples/**"
+      - "src/eai_delivery/**"
+      - ".github/workflows/enterprise-ai-release-gate.yml"
+
+jobs:
+  validate-ai-deployment:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Validate Deployment Contract
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m eai_delivery.cli validate-contract             examples/customer_contract.yaml             --schema examples/deployment_contract.schema.json
+
+      - name: Enterprise AI Release Gate
+        env:
+          PYTHONPATH: src
+          EVIDENCE_SIGNING_KEY: ${{ secrets.EVIDENCE_SIGNING_KEY }}
+        run: |
+          python -m eai_delivery.cli release-gate             --reference-contract examples/reference_contract.yaml             --target-contract examples/customer_contract.yaml             --reference-profile examples/execution_profiles.yaml:reference             --target-profile examples/execution_profiles.yaml:customer             --golden examples/golden_cases.csv             --thresholds examples/thresholds.yaml             --human-reviews examples/human_reviews.csv             --out out             --evidence-bundle out/evidence_bundle.zip
+
+      - name: Upload release evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: enterprise-ai-release-evidence
+          path: out/**

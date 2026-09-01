@@ -1,0 +1,38 @@
+schema_version: '0.2'
+deployment:
+  deployment_id: DEP-REF-001
+  environment: reference-stage
+  status: locked
+  owner: FDE
+business_contract:
+  workflow_id: WF-AGENT-001
+  workflow_name: Private Agent Validation
+  risk_class: high
+  human_review: required
+model_identity:
+  model_family: Qwen
+  model_id: Qwen-Example
+  revision: rev-A
+deployment_artifact:
+  provider_or_source: reference-provider
+  artifact_uri: registry://qwen/ref
+  artifact_hash: sha256:REF
+  precision: BF16
+serving_runtime:
+  engine: vLLM
+  version: 0.x-ref
+  container_digest: sha256:CONTAINER-REF
+inference_configuration:
+  context_window: 32768
+  max_output_tokens: 2048
+  temperature: 0
+  top_p: 1
+evaluation_contract:
+  golden_eval_set_id: GES-001
+  reference_deployment_id: DEP-REF-001
+  mandatory_metrics:
+  - task_completion_rate
+  - tool_call_accuracy
+  - schema_validity
+  - permission_compliance
+approvals: {}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Enterprise AI Release Readiness</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 32px; color: #172033; background: #f6f8fb; }
+h1 { margin-bottom: 4px; } .sub { color: #657086; margin-bottom: 24px; }
+.cards { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:24px; }
+.card { background:white; border:1px solid #dce2ea; border-radius:10px; padding:18px; min-width:190px; box-shadow:0 2px 8px #0000000b; }
+.big { font-size:28px; font-weight:700; } .pass { color:#137333; } .fail { color:#b3261e; }
+table { border-collapse:collapse; width:100%; background:white; }
+th,td { border:1px solid #dce2ea; padding:9px; text-align:left; }
+th { background:#eaf0f8; } td.pass { font-weight:700; color:#137333; } td.fail { font-weight:700; color:#b3261e; }
+section { margin-top:26px; }
+</style>
+</head>
+<body>
+<h1>Enterprise AI Release Readiness</h1>
+<div class="sub">Deployment Contract → Behavioral Equivalence → Evidence → Release Gate</div>
+<div class="cards">
+<div class="card"><div>Overall Verdict</div><div class="big fail">FAIL</div></div>
+<div class="card"><div>Mandatory Failures</div><div class="big">4</div></div>
+<div class="card"><div>Target Case Runs</div><div class="big">18</div></div>
+<div class="card"><div>Cost / Accepted Workflow</div><div class="big">9.733076923076924</div></div>
+</div>
+<section>
+<h2>Behavioral Equivalence Gates</h2>
+<table>
+<thead><tr><th>Metric</th><th>Reference</th><th>Target</th><th>Delta</th><th>Gate</th><th>Verdict</th></tr></thead>
+<tbody><tr><td>task_completion_rate</td><td>1.0</td><td>0.5454545454545454</td><td>-0.4545454545454546</td><td>min_delta -0.05</td><td class='fail'>FAIL</td></tr><tr><td>human_acceptance_rate</td><td>1.0</td><td>0.5454545454545454</td><td>-0.4545454545454546</td><td>min_delta -0.05</td><td class='fail'>FAIL</td></tr><tr><td>semantic_acceptance_rate</td><td>1.0</td><td>1.0</td><td>0.0</td><td>min_delta -0.1</td><td class='pass'>PASS</td></tr><tr><td>tool_call_accuracy</td><td>1.0</td><td>1.0</td><td>0.0</td><td>min_delta -0.03</td><td class='pass'>PASS</td></tr><tr><td>argument_accuracy</td><td>1.0</td><td>0.0</td><td>-1.0</td><td>min_delta -0.03</td><td class='fail'>FAIL</td></tr><tr><td>argument_schema_validity</td><td>1.0</td><td>0.0</td><td>-1.0</td><td>min_delta -0.03</td><td class='fail'>FAIL</td></tr><tr><td>schema_validity</td><td>1.0</td><td>1.0</td><td>0.0</td><td>min_value 0.97</td><td class='pass'>PASS</td></tr><tr><td>permission_compliance</td><td>1.0</td><td>1.0</td><td>0.0</td><td>min_value 1.0</td><td class='pass'>PASS</td></tr><tr><td>p95_latency_ms</td><td>900.0</td><td>1400.0</td><td>500.0</td><td>max_value 3000</td><td class='pass'>PASS</td></tr><tr><td>cost_per_accepted_workflow</td><td>0.03944444444444444</td><td>9.733076923076924</td><td>9.693632478632479</td><td>max_value 10.0</td><td class='pass'>PASS</td></tr></tbody>
+</table>
+</section>
+<section>
+<h2>Contract Change Revalidation</h2>
+<p>Risk: <strong>HIGH</strong> · Material changes: <strong>4</strong></p>
+<ul><li>Golden critical-path regression</li><li>Task quality</li><li>Tool calling</li><li>Structured output</li><li>Workflow economics</li><li>P50/P95 latency</li><li>Throughput</li><li>Critical accuracy/tool regression</li><li>Capacity/soak test</li></ul>
+</section>
+</body></html>

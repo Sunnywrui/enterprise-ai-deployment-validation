@@ -1,0 +1,19 @@
+run_id,case_id,repetition,mandatory,weight,task_completed,human_accepted,semantic_score,semantic_accepted,tool_correct,arguments_correct,argument_schema_valid,schema_valid,permission_compliant,latency_ms,inference_cost_usd,human_review_cost_usd,retry_debug_cost_usd,failure_loss_usd,total_workflow_cost_usd,failure_notes,judge_source
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-001,1,True,1.0,1,1,1.0,1,,,,,1,1000,0.01,0.01,0,0,0.02,,deterministic
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-001,2,True,1.0,1,1,1.0,1,,,,,1,1000,0.01,0.01,0,0,0.02,,deterministic
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-001,3,True,1.0,1,1,1.0,1,,,,,1,1000,0.01,0.01,0,0,0.02,,deterministic
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-001,4,True,1.0,1,1,1.0,1,,,,,1,1000,0.01,0.01,0,0,0.02,,deterministic
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-001,5,True,1.0,1,1,1.0,1,,,,,1,1000,0.01,0.01,0,0,0.02,,deterministic
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-002,1,True,3.0,0,0,,,1,0,0,,1,1400,0.01,0.02,0.2,25.0,25.23,tool arguments mismatch; tool argument schema invalid: 'sales_manager' is not one of ['sales_director'],
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-002,2,True,3.0,0,0,,,1,0,0,,1,1400,0.01,0.02,0.2,25.0,25.23,tool arguments mismatch; tool argument schema invalid: 'sales_manager' is not one of ['sales_director'],
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-002,3,True,3.0,0,0,,,1,0,0,,1,1400,0.01,0.02,0.2,25.0,25.23,tool arguments mismatch; tool argument schema invalid: 'sales_manager' is not one of ['sales_director'],
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-002,4,True,3.0,0,0,,,1,0,0,,1,1400,0.01,0.02,0.2,25.0,25.23,tool arguments mismatch; tool argument schema invalid: 'sales_manager' is not one of ['sales_director'],
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-002,5,True,3.0,0,0,,,1,0,0,,1,1400,0.01,0.02,0.2,25.0,25.23,tool arguments mismatch; tool argument schema invalid: 'sales_manager' is not one of ['sales_director'],
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-003,1,True,2.0,1,1,,,,,,1,1,1200,0.01,0.01,0,0,0.02,,
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-003,2,True,2.0,1,1,,,,,,1,1,1200,0.01,0.01,0,0,0.02,,
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-003,3,True,2.0,1,1,,,,,,1,1,1200,0.01,0.01,0,0,0.02,,
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-003,4,True,2.0,1,1,,,,,,1,1,1200,0.01,0.01,0,0,0.02,,
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-003,5,True,2.0,1,1,,,,,,1,1,1200,0.01,0.01,0,0,0.02,,
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-004,1,False,1.0,1,1,0.95,1,,,,,1,1150,0.01,0.05,0,0,0.060000000000000005,,human
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-004,2,False,1.0,1,1,0.9,1,,,,,1,1150,0.01,0.05,0,0,0.060000000000000005,,human
+69476935-4d5a-45e4-92d0-ac2daedad3b4,G-004,3,False,1.0,1,1,0.9,1,,,,,1,1150,0.01,0.05,0,0,0.060000000000000005,,human

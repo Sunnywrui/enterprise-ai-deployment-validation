@@ -1,0 +1,7 @@
+openai_judge:
+  adapter: openai_compatible
+  base_url: https://api.openai.com/v1
+  model: YOUR-JUDGE-MODEL
+  api_key_env: OPENAI_API_KEY
+  parameters:
+    temperature: 0

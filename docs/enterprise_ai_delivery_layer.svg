@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill: #17365D; }
+      .sub { font: 400 18px Arial, sans-serif; fill: #5B6573; }
+      .box { fill: #F7FAFC; stroke: #315B7D; stroke-width: 2; rx: 16; ry: 16; }
+      .gate { fill: #EEF4FA; stroke: #315B7D; stroke-width: 2; rx: 16; ry: 16; }
+      .decision { fill: #FFF7E6; stroke: #A86A00; stroke-width: 2; rx: 16; ry: 16; }
+      .text { font: 600 18px Arial, sans-serif; fill: #172033; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 400 15px Arial, sans-serif; fill: #465467; text-anchor: middle; dominant-baseline: middle; }
+      .arrow { stroke: #52667A; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#52667A"/>
+    </marker>
+  </defs>
+
+  <text x="700" y="55" class="title" text-anchor="middle">Enterprise AI Delivery Layer</text>
+  <text x="700" y="90" class="sub" text-anchor="middle">Deployment Contract → Capability Preservation → Behavioral Equivalence → Release Governance</text>
+
+  <rect x="80" y="145" width="210" height="90" class="box"/>
+  <text x="185" y="180" class="text">Model / Artifact</text>
+  <text x="185" y="208" class="small">Registry & Provenance</text>
+
+  <rect x="365" y="145" width="210" height="90" class="box"/>
+  <text x="470" y="180" class="text">Deployment Contract</text>
+  <text x="470" y="208" class="small">Identity + Runtime + SLA</text>
+
+  <rect x="650" y="145" width="210" height="90" class="box"/>
+  <text x="755" y="180" class="text">Contract Diff</text>
+  <text x="755" y="208" class="small">Material Change Detection</text>
+
+  <rect x="935" y="145" width="250" height="90" class="box"/>
+  <text x="1060" y="180" class="text">Revalidation Plan</text>
+  <text x="1060" y="208" class="small">Required Evidence Scope</text>
+
+  <path d="M290 190 H365" class="arrow"/>
+  <path d="M575 190 H650" class="arrow"/>
+  <path d="M860 190 H935" class="arrow"/>
+
+  <rect x="155" y="335" width="245" height="100" class="gate"/>
+  <text x="278" y="372" class="text">Reference Deployment</text>
+  <text x="278" y="402" class="small">Known-good behavior</text>
+
+  <rect x="1000" y="335" width="245" height="100" class="gate"/>
+  <text x="1122" y="372" class="text">Candidate Deployment</text>
+  <text x="1122" y="402" class="small">Customer / New Runtime</text>
+
+  <rect x="550" y="315" width="300" height="120" class="gate"/>
+  <text x="700" y="352" class="text">Golden Workflow Set</text>
+  <text x="700" y="382" class="small">Repeated Trials + CI</text>
+  <text x="700" y="410" class="small">Tool / Schema / Semantic / Human</text>
+
+  <path d="M470 235 C470 280,278 280,278 335" class="arrow"/>
+  <path d="M1060 235 C1060 280,1122 280,1122 335" class="arrow"/>
+  <path d="M400 385 H550" class="arrow"/>
+  <path d="M1000 385 H850" class="arrow"/>
+
+  <rect x="515" y="515" width="370" height="105" class="box"/>
+  <text x="700" y="552" class="text">Behavioral Equivalence</text>
+  <text x="700" y="582" class="small">Quality · Safety · Latency · Cost</text>
+  <path d="M700 435 V515" class="arrow"/>
+
+  <rect x="515" y="665" width="370" height="95" class="decision"/>
+  <text x="700" y="700" class="text">Release Decision</text>
+  <text x="700" y="730" class="small">PASS / BLOCK + Evidence Bundle</text>
+  <path d="M700 620 V665" class="arrow"/>
+
+  <rect x="1010" y="645" width="270" height="110" class="box"/>
+  <text x="1145" y="680" class="text">Production Runtime</text>
+  <text x="1145" y="710" class="small">Observation + Drift</text>
+  <text x="1145" y="738" class="small">→ Revalidation</text>
+  <path d="M885 713 H1010" class="arrow"/>
+
+  <text x="80" y="800" class="sub">Model Identity ≠ Deployment Artifact ≠ Runtime Behavior ≠ Business Outcome</text>
+</svg>

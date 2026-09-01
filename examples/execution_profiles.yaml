@@ -1,0 +1,63 @@
+reference:
+  adapter: replay
+  deployment_id: DEP-REF-001
+  repetitions_per_case: 1
+  default_latency_ms: 700
+  cost_per_call_usd: 0.02
+  responses:
+    G-001:
+      text: Customer C-1001 found.
+      latency_ms: 650
+    G-002:
+      text: ''
+      tool_name: approval_request
+      tool_arguments:
+        approver_role: sales_director
+      latency_ms: 900
+    G-003:
+      text: '{"status": "ok"}'
+      latency_ms: 720
+customer:
+  adapter: replay
+  deployment_id: DEP-CUSTOMER-001
+  repetitions_per_case: 1
+  default_latency_ms: 1150
+  cost_per_call_usd: 0.01
+  responses:
+    G-001:
+      text: Customer C-1001 found.
+      latency_ms: 1000
+    G-002:
+      text: ''
+      tool_name: approval_request
+      tool_arguments:
+        approver_role: sales_manager
+      latency_ms: 1400
+    G-003:
+      text: '{"status": "ok"}'
+      latency_ms: 1200
+azure_example:
+  adapter: azure_openai
+  deployment_id: DEP-AZURE
+  azure_endpoint: https://YOUR-RESOURCE.openai.azure.com
+  deployment_name: YOUR-DEPLOYMENT
+  api_version: '2024-10-21'
+  api_key_env: AZURE_OPENAI_API_KEY
+openai_example:
+  adapter: openai_compatible
+  deployment_id: DEP-OPENAI
+  base_url: https://api.openai.com/v1
+  model: YOUR-MODEL
+  api_key_env: OPENAI_API_KEY
+bedrock_example:
+  adapter: bedrock
+  deployment_id: DEP-BEDROCK
+  region: us-east-1
+  model_id: YOUR-BEDROCK-MODEL-ID
+vertex_example:
+  adapter: vertex
+  deployment_id: DEP-VERTEX
+  project: YOUR-GCP-PROJECT
+  location: us-central1
+  publisher: google
+  model: YOUR-VERTEX-MODEL

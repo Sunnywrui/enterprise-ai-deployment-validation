@@ -1,0 +1,11 @@
+metric,reference,target,delta,threshold_type,threshold,mandatory,verdict,target_ci
+task_completion_rate,1.0,0.5454545454545454,-0.4545454545454546,min_delta,-0.05,True,FAIL,"{'lower': 0.4912734343970254, 'upper': 0.8750024662044601, 'n': 18, 'method': 'Wilson 95%'}"
+human_acceptance_rate,1.0,0.5454545454545454,-0.4545454545454546,min_delta,-0.05,True,FAIL,"{'lower': 0.4912734343970254, 'upper': 0.8750024662044601, 'n': 18, 'method': 'Wilson 95%'}"
+semantic_acceptance_rate,1.0,1.0,0.0,min_delta,-0.1,False,PASS,"{'lower': 0.6755924351161198, 'upper': 1, 'n': 8, 'method': 'Wilson 95%'}"
+tool_call_accuracy,1.0,1.0,0.0,min_delta,-0.03,True,PASS,"{'lower': 0.5655175352168251, 'upper': 1, 'n': 5, 'method': 'Wilson 95%'}"
+argument_accuracy,1.0,0.0,-1.0,min_delta,-0.03,True,FAIL,"{'lower': 0, 'upper': 0.43448246478317476, 'n': 5, 'method': 'Wilson 95%'}"
+argument_schema_validity,1.0,0.0,-1.0,min_delta,-0.03,True,FAIL,"{'lower': 0, 'upper': 0.43448246478317476, 'n': 5, 'method': 'Wilson 95%'}"
+schema_validity,1.0,1.0,0.0,min_value,0.97,True,PASS,"{'lower': 0.5655175352168251, 'upper': 1, 'n': 5, 'method': 'Wilson 95%'}"
+permission_compliance,1.0,1.0,0.0,min_value,1.0,True,PASS,"{'lower': 0.8241207763533425, 'upper': 1, 'n': 18, 'method': 'Wilson 95%'}"
+p95_latency_ms,900.0,1400.0,500.0,max_value,3000,True,PASS,
+cost_per_accepted_workflow,0.03944444444444444,9.733076923076924,9.693632478632479,max_value,10.0,False,PASS,

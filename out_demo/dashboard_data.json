@@ -1,0 +1,364 @@
+{
+  "overall_verdict": "FAIL",
+  "mandatory_failures": 4,
+  "reference": {
+    "task_completion_rate": 1.0,
+    "human_acceptance_rate": 1.0,
+    "semantic_acceptance_rate": 1.0,
+    "tool_call_accuracy": 1.0,
+    "argument_accuracy": 1.0,
+    "argument_schema_validity": 1.0,
+    "schema_validity": 1.0,
+    "permission_compliance": 1.0,
+    "semantic_score_mean": 0.96875,
+    "p95_latency_ms": 900.0,
+    "total_effective_cost_usd": 0.71,
+    "cost_per_accepted_workflow": 0.03944444444444444,
+    "case_runs": 18,
+    "accepted_runs": 18,
+    "confidence_intervals": {
+      "task_completion_rate": {
+        "lower": 0.8241207763533425,
+        "upper": 1,
+        "n": 18,
+        "method": "Wilson 95%"
+      },
+      "human_acceptance_rate": {
+        "lower": 0.8241207763533425,
+        "upper": 1,
+        "n": 18,
+        "method": "Wilson 95%"
+      },
+      "semantic_acceptance_rate": {
+        "lower": 0.6755924351161198,
+        "upper": 1,
+        "n": 8,
+        "method": "Wilson 95%"
+      },
+      "tool_call_accuracy": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "argument_accuracy": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "argument_schema_validity": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "schema_validity": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "permission_compliance": {
+        "lower": 0.8241207763533425,
+        "upper": 1,
+        "n": 18,
+        "method": "Wilson 95%"
+      },
+      "semantic_score_mean": {
+        "lower": 0.937008458261366,
+        "upper": 1.000491541738634,
+        "n": 8,
+        "method": "Normal approx 95%"
+      }
+    }
+  },
+  "target": {
+    "task_completion_rate": 0.5454545454545454,
+    "human_acceptance_rate": 0.5454545454545454,
+    "semantic_acceptance_rate": 1.0,
+    "tool_call_accuracy": 1.0,
+    "argument_accuracy": 0.0,
+    "argument_schema_validity": 0.0,
+    "schema_validity": 1.0,
+    "permission_compliance": 1.0,
+    "semantic_score_mean": 0.96875,
+    "p95_latency_ms": 1400.0,
+    "total_effective_cost_usd": 126.53,
+    "cost_per_accepted_workflow": 9.733076923076924,
+    "case_runs": 18,
+    "accepted_runs": 13,
+    "confidence_intervals": {
+      "task_completion_rate": {
+        "lower": 0.4912734343970254,
+        "upper": 0.8750024662044601,
+        "n": 18,
+        "method": "Wilson 95%"
+      },
+      "human_acceptance_rate": {
+        "lower": 0.4912734343970254,
+        "upper": 0.8750024662044601,
+        "n": 18,
+        "method": "Wilson 95%"
+      },
+      "semantic_acceptance_rate": {
+        "lower": 0.6755924351161198,
+        "upper": 1,
+        "n": 8,
+        "method": "Wilson 95%"
+      },
+      "tool_call_accuracy": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "argument_accuracy": {
+        "lower": 0,
+        "upper": 0.43448246478317476,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "argument_schema_validity": {
+        "lower": 0,
+        "upper": 0.43448246478317476,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "schema_validity": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      },
+      "permission_compliance": {
+        "lower": 0.8241207763533425,
+        "upper": 1,
+        "n": 18,
+        "method": "Wilson 95%"
+      },
+      "semantic_score_mean": {
+        "lower": 0.937008458261366,
+        "upper": 1.000491541738634,
+        "n": 8,
+        "method": "Normal approx 95%"
+      }
+    }
+  },
+  "delta_metrics": [
+    {
+      "metric": "task_completion_rate",
+      "reference": 1.0,
+      "target": 0.5454545454545454,
+      "delta": -0.4545454545454546,
+      "threshold_type": "min_delta",
+      "threshold": -0.05,
+      "mandatory": true,
+      "verdict": "FAIL",
+      "target_ci": {
+        "lower": 0.4912734343970254,
+        "upper": 0.8750024662044601,
+        "n": 18,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "human_acceptance_rate",
+      "reference": 1.0,
+      "target": 0.5454545454545454,
+      "delta": -0.4545454545454546,
+      "threshold_type": "min_delta",
+      "threshold": -0.05,
+      "mandatory": true,
+      "verdict": "FAIL",
+      "target_ci": {
+        "lower": 0.4912734343970254,
+        "upper": 0.8750024662044601,
+        "n": 18,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "semantic_acceptance_rate",
+      "reference": 1.0,
+      "target": 1.0,
+      "delta": 0.0,
+      "threshold_type": "min_delta",
+      "threshold": -0.1,
+      "mandatory": false,
+      "verdict": "PASS",
+      "target_ci": {
+        "lower": 0.6755924351161198,
+        "upper": 1,
+        "n": 8,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "tool_call_accuracy",
+      "reference": 1.0,
+      "target": 1.0,
+      "delta": 0.0,
+      "threshold_type": "min_delta",
+      "threshold": -0.03,
+      "mandatory": true,
+      "verdict": "PASS",
+      "target_ci": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "argument_accuracy",
+      "reference": 1.0,
+      "target": 0.0,
+      "delta": -1.0,
+      "threshold_type": "min_delta",
+      "threshold": -0.03,
+      "mandatory": true,
+      "verdict": "FAIL",
+      "target_ci": {
+        "lower": 0,
+        "upper": 0.43448246478317476,
+        "n": 5,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "argument_schema_validity",
+      "reference": 1.0,
+      "target": 0.0,
+      "delta": -1.0,
+      "threshold_type": "min_delta",
+      "threshold": -0.03,
+      "mandatory": true,
+      "verdict": "FAIL",
+      "target_ci": {
+        "lower": 0,
+        "upper": 0.43448246478317476,
+        "n": 5,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "schema_validity",
+      "reference": 1.0,
+      "target": 1.0,
+      "delta": 0.0,
+      "threshold_type": "min_value",
+      "threshold": 0.97,
+      "mandatory": true,
+      "verdict": "PASS",
+      "target_ci": {
+        "lower": 0.5655175352168251,
+        "upper": 1,
+        "n": 5,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "permission_compliance",
+      "reference": 1.0,
+      "target": 1.0,
+      "delta": 0.0,
+      "threshold_type": "min_value",
+      "threshold": 1.0,
+      "mandatory": true,
+      "verdict": "PASS",
+      "target_ci": {
+        "lower": 0.8241207763533425,
+        "upper": 1,
+        "n": 18,
+        "method": "Wilson 95%"
+      }
+    },
+    {
+      "metric": "p95_latency_ms",
+      "reference": 900.0,
+      "target": 1400.0,
+      "delta": 500.0,
+      "threshold_type": "max_value",
+      "threshold": 3000,
+      "mandatory": true,
+      "verdict": "PASS",
+      "target_ci": null
+    },
+    {
+      "metric": "cost_per_accepted_workflow",
+      "reference": 0.03944444444444444,
+      "target": 9.733076923076924,
+      "delta": 9.693632478632479,
+      "threshold_type": "max_value",
+      "threshold": 10.0,
+      "mandatory": false,
+      "verdict": "PASS",
+      "target_ci": null
+    }
+  ],
+  "revalidation": {
+    "material_change_count": 4,
+    "risk_level": "HIGH",
+    "changed_domains": [
+      "artifact",
+      "runtime"
+    ],
+    "changes": [
+      {
+        "domain": "artifact",
+        "field": "deployment_artifact.artifact_hash",
+        "reference": "sha256:REF",
+        "target": "sha256:CUSTOMER",
+        "material": true,
+        "revalidation_scope": "Full critical-path + economics"
+      },
+      {
+        "domain": "artifact",
+        "field": "deployment_artifact.quantization",
+        "reference": null,
+        "target": {
+          "enabled": true,
+          "method": "AWQ",
+          "bits": 4
+        },
+        "material": true,
+        "revalidation_scope": "Full critical-path + economics"
+      },
+      {
+        "domain": "artifact",
+        "field": "deployment_artifact.precision",
+        "reference": "BF16",
+        "target": "INT4",
+        "material": true,
+        "revalidation_scope": "Full critical-path + economics"
+      },
+      {
+        "domain": "runtime",
+        "field": "serving_runtime.version",
+        "reference": "0.x-ref",
+        "target": "0.x-customer",
+        "material": true,
+        "revalidation_scope": "Targeted behavior + performance"
+      }
+    ],
+    "required_revalidation": [
+      "Golden critical-path regression",
+      "Task quality",
+      "Tool calling",
+      "Structured output",
+      "Workflow economics",
+      "P50/P95 latency",
+      "Throughput",
+      "Critical accuracy/tool regression",
+      "Capacity/soak test"
+    ],
+    "automatic_release_allowed": false,
+    "approval_required": [
+      "FDE/AI Architect",
+      "QA/Evaluation",
+      "Business/Risk Owner"
+    ]
+  },
+  "release_ready": false
+}

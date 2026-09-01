@@ -1,0 +1,11 @@
+metrics:
+  task_completion_rate: {type: min_delta, value: -0.05, mandatory: true}
+  human_acceptance_rate: {type: min_delta, value: -0.05, mandatory: true}
+  semantic_acceptance_rate: {type: min_delta, value: -0.10, mandatory: false}
+  tool_call_accuracy: {type: min_delta, value: -0.03, mandatory: true}
+  argument_accuracy: {type: min_delta, value: -0.03, mandatory: true}
+  argument_schema_validity: {type: min_delta, value: -0.03, mandatory: true}
+  schema_validity: {type: min_value, value: 0.97, mandatory: true}
+  permission_compliance: {type: min_value, value: 1.0, mandatory: true}
+  p95_latency_ms: {type: max_value, value: 3000, mandatory: true}
+  cost_per_accepted_workflow: {type: max_value, value: 10.0, mandatory: false}

@@ -1,0 +1,72 @@
+{
+  "task_completion_rate": 0.5454545454545454,
+  "human_acceptance_rate": 0.5454545454545454,
+  "semantic_acceptance_rate": 1.0,
+  "tool_call_accuracy": 1.0,
+  "argument_accuracy": 0.0,
+  "argument_schema_validity": 0.0,
+  "schema_validity": 1.0,
+  "permission_compliance": 1.0,
+  "semantic_score_mean": 0.96875,
+  "p95_latency_ms": 1400.0,
+  "total_effective_cost_usd": 126.53,
+  "cost_per_accepted_workflow": 9.733076923076924,
+  "case_runs": 18,
+  "accepted_runs": 13,
+  "confidence_intervals": {
+    "task_completion_rate": {
+      "lower": 0.4912734343970254,
+      "upper": 0.8750024662044601,
+      "n": 18,
+      "method": "Wilson 95%"
+    },
+    "human_acceptance_rate": {
+      "lower": 0.4912734343970254,
+      "upper": 0.8750024662044601,
+      "n": 18,
+      "method": "Wilson 95%"
+    },
+    "semantic_acceptance_rate": {
+      "lower": 0.6755924351161198,
+      "upper": 1,
+      "n": 8,
+      "method": "Wilson 95%"
+    },
+    "tool_call_accuracy": {
+      "lower": 0.5655175352168251,
+      "upper": 1,
+      "n": 5,
+      "method": "Wilson 95%"
+    },
+    "argument_accuracy": {
+      "lower": 0,
+      "upper": 0.43448246478317476,
+      "n": 5,
+      "method": "Wilson 95%"
+    },
+    "argument_schema_validity": {
+      "lower": 0,
+      "upper": 0.43448246478317476,
+      "n": 5,
+      "method": "Wilson 95%"
+    },
+    "schema_validity": {
+      "lower": 0.5655175352168251,
+      "upper": 1,
+      "n": 5,
+      "method": "Wilson 95%"
+    },
+    "permission_compliance": {
+      "lower": 0.8241207763533425,
+      "upper": 1,
+      "n": 18,
+      "method": "Wilson 95%"
+    },
+    "semantic_score_mean": {
+      "lower": 0.937008458261366,
+      "upper": 1.000491541738634,
+      "n": 8,
+      "method": "Normal approx 95%"
+    }
+  }
+}
