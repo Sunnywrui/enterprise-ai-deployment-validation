@@ -2,7 +2,7 @@
 
 > **Model Identity ≠ Deployment Artifact ≠ Runtime Behavior ≠ Business Outcome**
 
-![Enterprise AI Delivery Layer](./docs/enterprise_ai_delivery_layer.svg)
+![Enterprise AI Delivery Layer](https://raw.githubusercontent.com/Sunnywrui/enterprise-ai-deployment-validation/main/docs/enterprise_ai_delivery_layer.svg)
 
 A reference implementation for validating whether an AI capability survives the transition from a reference environment into a real enterprise deployment.
 
