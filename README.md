@@ -93,9 +93,6 @@ Earlier versions were development milestones:
 | v0.3 | Executable validation framework |
 | v0.4 | Schema validation, judges, repeated trials, confidence intervals, cloud adapters |
 | **v0.5** | **CI/CD release governance, evidence bundles, signing, dashboard and runtime drift hook** |
-
-If you publish this project to GitHub, v0.5 should be the primary repository. Older versions can optionally be archived as releases or placed under `/docs/history`, but they are not runtime dependencies.
-
 ---
 
 # Core capabilities
@@ -620,7 +617,7 @@ Python 3.11 recommended
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-ORG/YOUR-REPO.git
+git clone https://github.com/Sunnywrui/enterprise-ai-deployment-validation.git
 cd YOUR-REPO
 ```
 
